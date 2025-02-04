@@ -22,7 +22,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h1 className="text-4xl sm:text-5xl font-bold">Sarah Anderson</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold">Serena Lam</h1>
             <p className="text-lg text-muted-foreground">
               Contemporary artist based in New York, specializing in abstract expressionism
               and mixed media installations. With over a decade of experience, my work

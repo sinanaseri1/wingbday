@@ -15,13 +15,13 @@ const artworks = [
     id: 2,
     title: 'Urban Dreams',
     category: 'Mixed Media',
-    image: 'https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&q=80',
+    image: 'https://www.mark-rothko.org/assets/img/paintings/untitled-1952.jpg',
   },
   {
     id: 3,
     title: 'Ethereal Dance',
     category: 'Installation',
-    image: 'https://images.unsplash.com/photo-1576504677634-06b2130bd752?auto=format&fit=crop&q=80',
+    image: 'https://blog.displate.com/wp-content/uploads/2021/10/Kandinsky_Yellow_Red_Blue.jpg',
   },
   // Add more artworks as needed
 ];

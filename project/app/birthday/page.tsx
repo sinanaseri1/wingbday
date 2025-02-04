@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import Navigation from '@/components/Navigation';
-import { Cake, Gift, Heart } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import Navigation from "@/components/Navigation";
+import { Cake, Gift, Heart } from "lucide-react";
+import Image from "next/image";
 
 export default function Birthday() {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -31,7 +32,7 @@ export default function Birthday() {
                   scale: 0,
                 }}
                 animate={{
-                  top: '100%',
+                  top: "100%",
                   scale: 1,
                   transition: {
                     duration: 2 + Math.random() * 2,
@@ -63,26 +64,17 @@ export default function Birthday() {
             }}
             className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text"
           >
-            Happy Birthday!
+            Happy Birthday Serena!
           </motion.h1>
 
           <div className="flex justify-center space-x-8">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="text-pink-500"
-            >
+            <motion.div whileHover={{ scale: 1.1 }} className="text-pink-500">
               <Cake size={48} />
             </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="text-purple-500"
-            >
+            <motion.div whileHover={{ scale: 1.1 }} className="text-purple-500">
               <Gift size={48} />
             </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="text-indigo-500"
-            >
+            <motion.div whileHover={{ scale: 1.1 }} className="text-indigo-500">
               <Heart size={48} />
             </motion.div>
           </div>
@@ -93,21 +85,21 @@ export default function Birthday() {
             transition={{ delay: 0.5 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            On this special day, I want to share with you a piece of art that represents
-            the joy and creativity you bring to the world. May your day be filled with
-            inspiration and happiness!
+            On this special day, I want to share with you a piece of art that
+            represents the joy and creativity you bring to the world. May your
+            day be filled with inspiration and happiness!
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="relative aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden"
+            className="relative aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden flex items-center justify-center"
           >
             <img
-              src="https://images.unsplash.com/photo-1579541637431-49012292a99c?auto=format&fit=crop&q=80"
+              src="https://media1.giphy.com/media/gTfsqVWaGlZITd5FuA/giphy.gif?cid=6c09b9520t1rwsfcbspvhpxd3d0ct7twczvopr4vzmw877bf&ep=v1_stickers_search&rid=giphy.gif&ct=s"
               alt="Birthday Artwork"
-              className="object-cover w-full h-full"
+              className="block mx-auto"
             />
           </motion.div>
         </motion.div>
