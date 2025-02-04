@@ -8,7 +8,7 @@ import Navigation from '@/components/Navigation';
 export default function Contact() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data);
     // Handle form submission
   };

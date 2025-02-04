@@ -49,7 +49,14 @@ export default function Portfolio() {
   );
 }
 
-function ArtworkCard({ artwork, index }) {
+interface Artwork {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+}
+
+function ArtworkCard({ artwork, index }: { artwork: Artwork; index: number }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
