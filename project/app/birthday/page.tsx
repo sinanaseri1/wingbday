@@ -85,9 +85,10 @@ export default function Birthday() {
             transition={{ delay: 0.5 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            On this special day, I want to share with you a piece of art that
-            represents the joy and creativity you bring to the world. May your
-            day be filled with inspiration and happiness!
+            Happy Birthday! I hope you love this website. When you share your
+            details here, I hope people see just how amazing you are and that
+            every opportunity you dream of comes your way. Wishing you success,
+            joy, and an incredible year ahead!
           </motion.p>
 
           <motion.div
